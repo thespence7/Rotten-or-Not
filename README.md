@@ -17,7 +17,7 @@ recall: 83.0%,
 
 **Random Forest:**
 accuracy: 71.3%,
-precision:: 75.0%,
+precision: 75.0%,
 recall: 72.2%
 
 **Gradient Boosting:**
