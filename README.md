@@ -29,7 +29,7 @@ performed gride searches on all 3 models. Logistic Regression, saw no change.
 
 **Logistic Regression** | **Random Forest** | **Gradient Boosting**
 ----------------------- | ----------------- | --------------------
-Train Set accuracy: 78.6% | Train Set accuracy: 74.3% | Train Set accuracy: 63.2%
+Train Set accuracy: 78.6% | Train Set accuracy: ***74.3%*** | Train Set accuracy: 63.2%
 
 
 ## Neural Network
