@@ -5,7 +5,7 @@ Early on in my childhood, I loved watching movies. I remember watching The Lion 
 # About the data
 This dataset was scraped from Rottentomatoes.com and placed in rotten_tomatoes_reviews.csv
 
-There was relatively little cleaning that I had to do for this dataset, but I did implement an easier rating system. If a review was 60% or greater (fresh), they received a 1. If a review was less than 60%(rotten), they received a 0. The 2 features are listed below:
+There was relatively little cleaning that I had to do for this dataset, but I did implement an easier rating system. If a review was 60% or greater (fresh), they received a 1. If a review was less than 60% (rotten), they received a 0. The 2 features are listed below:
 - `Freshness`: as described above, this column contains 1s and 0s pertaining to the critics score
 - `Review`: critics review in string format
 
