@@ -13,6 +13,10 @@ There was relatively little cleaning that I had to do for this dataset, but I di
 ## Initial EDA
 In the reviews column I found that there were multiple duplicate reviews or reviews that contained a link to a review not on Rottentomatoes.com, which I decided to solely remove the duplicates. 
 
+<p align="center">
+  <img width="600" height="450" src="img/eda/repeat_guest.png">
+</p>
+
 After this, my data was decently balanced with 180k Fresh reviews and 150k rotten reviews. At this point I'm comfortable with not performing any balancing methods.
 
 ## Modeling
@@ -31,6 +35,7 @@ performed gride searches on all 3 models. Logistic Regression, saw no change.
 ----------------------- | ----------------- | --------------------
 Train Set accuracy: 78.6% | Train Set accuracy: ***74.3%*** | Train Set accuracy: 63.2%
 
+Random Forest increased
 
 ## Neural Network
 After, running my initial models, 
