@@ -14,9 +14,7 @@ Initial cross validation accuracy, precision, and recall scores using various mo
 
 **Logistic Regression** | **Random Forest** | **Gradient Boosting**
 ----------------------- | ----------------- | --------------------
-accuracy: 78.6% | accuracy: 71.3% | accuracy: 63.2%
-precision: 79.3% | precision: 75.0% | precision: 60.8%
-recall: 83.0% | recall: 72.2% | recall: 94.4%
+Train Set accuracy: 78.6% | Train Set accuracy: 71.3% | Train Set accuracy: 63.2%
 
 
 
