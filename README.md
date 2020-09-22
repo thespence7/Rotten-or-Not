@@ -14,7 +14,7 @@ There was relatively little cleaning that I had to do for this dataset, but I di
 In the reviews column I found that there were multiple duplicate reviews or reviews that contained a link to a review not on Rottentomatoes.com, which I decided to solely remove the duplicates. 
 
 <p align="center">
-  <img width="600" height="450" src="img/eda/Fresh">
+  <img width="600" height="450" src="Rotten-Tomatoes/img/eda/Fresh.png">
 </p>
 
 After this, my data was decently balanced with 180k Fresh reviews and 150k rotten reviews. At this point I'm comfortable with not performing any balancing methods.
