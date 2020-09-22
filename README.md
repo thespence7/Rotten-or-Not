@@ -57,14 +57,19 @@ LSTM We can see dropout having the desired impact on training with a slightly sl
 Accuracy: 89.9% | Accuracy: 79.4% |
 Loss: 24.1% | Loss: 50.7%
 
+<p align="center">
+  <img width="600" height="450" src="Rotten-Tomatoes/img/results/LSTM_Accuracy.png">
+</p>
 
+My LSTM improved accuracy by 4.4% compared to Logistic Regression, which is great news! This means that my model is predicting True Positives and True Negatives 80% of the time.
 
 <p align="center">
   <img width="600" height="450" src="Rotten-Tomatoes/img/results/LSTM_Loss.png">
 </p>
 
+Interestingly, both accuracy and loss are increasing, which suggests the neural network is starting to overfit. The network is starting to learn patterns only relevant for the training set and not great for generalization. This leads to some reviews from the validation set are predicted more poorly. However, it is at the same time still learning some patterns which are useful for generalization as more and more reviews are being correctly classified.
 
+How are we able to fix the issue of overfitting the data in the future? First off, we need much more data. Maybe three to four million reviews, but that is just a start. Future comparisons would include VaderSentiment and TextBlob. Thank you for going through my repo. 
 
-<p align="center">
-  <img width="600" height="450" src="Rotten-Tomatoes/img/results/LSTM_Accuracy.png">
-</p>
+As always, if you have any questions or request changes, please reach out or comment.
+
