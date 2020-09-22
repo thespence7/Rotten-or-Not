@@ -1,4 +1,4 @@
-![Project Image](https://github.com/thespence7/Rotten-or-Not/Rotten-Tomatoes/img/Title_Graphic/rt_logo_primary_rgb-h_2018.jpg)
+# `Rotten or Not?`
 
 ---
 
@@ -86,7 +86,7 @@ How are we able to fix the issue of overfitting the data in the future? First of
 
 
 ## How To Use
-Running `python clean_data.py` will load the dataset, clean, create dummies, and save the final csv's into the data folder. After that, you can run `python run_models.py` which will load the cleaned dataset, instantiate models, train, predict, and give results.
+Running `webscrape.py` will scrape the data and save it to the final csv's into the data folder. After that, you can run `asdhfgasfgasdkfh` which will load the cleaned dataset, instantiate models, train, predict, and give results.
 
 ---
 
