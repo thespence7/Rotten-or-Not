@@ -47,7 +47,6 @@ def modeling(X_train, y_train):
                     'verbose' : 1,
                     'cv' : 3,
                     'scoring' : 'accuracy'}
-    boost_params = {}
 
     models = [LogisticRegression(),
                 RandomForestClassifier(),
@@ -56,20 +55,40 @@ def modeling(X_train, y_train):
     for model in models:
 
         if model == LogisticRegression():
-            log_reg_score = cross_validate(model, document_tfidf_matrix, y_train, fit_params=gistic_params)
+            log_reg_score = cross_validate(model, document_tfidf_matrix, y_train, fit_params=gistic_params, scoring='accuracy')
             print('Logistic Regression Modeling Scores \n')
             for key, val in log_reg_score.items():
                 print(f'The {} is: {val.mean()}')
 
         if model == RandomForestClassifier():
-            random_forest_score = cross_validate(model, document_tfidf_matrix, y_train, fit_params=forest_params, scoring=['accuracy', 'precision', 'recall'])
+            random_forest_score = cross_validate(model, document_tfidf_matrix, y_train, fit_params=forest_params, scoring='accuracy')
             print('Random Forest Modeling Scores \n')
             for key, val in random_forest_score.items():
                 print(f'The {} is: {val.mean()}')
 
         if model == GradientBoostingClassifier():
-            gradient_boost_score = cross_validate(model, document_tfidf_matrix, y_train, fit_params=forest_params, scoring=['accuracy', 'precision', 'recall'])
+            gradient_boost_score = cross_validate(model, document_tfidf_matrix, y_train, scoring='accuracy')
             print('Gradient Boost Modeling Scores \n')
             for key, val in gradient_boost_score.items():
                 print(f'The {} is: {val.mean()}')
 
+
+
+
+def test_models():
+    ### logistic regression testset
+    test_X_test = tfidf.fit_transform(X_test)
+    test_logistic = cross_validate(model_log_regress, test_X_test, y_test, verbose=4, cv=3, scoring='accuracy')
+    for key, val in test_logistic.items():
+        print(f'Logistic Regression Test Set Accuracy {key}: {val.mean()}')
+
+    ### random forest testset
+    test_forest = cross_validate(random_forest, test_X_test, y_test, verbose=4, cv=3, scoring='accuracy', n_jobs=-1)
+    for key, val in test_forest.items():
+        print(f'Random Forest Test Set Accuracy{key}: {val.mean()}')
+
+
+    #### gradientBoost trainset
+    gradient_score = cross_validate(gradient_boost, test_X_test, y_test, cv=3, verbose=4, scoring='accuracy', n_jobs=-1)
+    for key, val in gradient_score.items():
+        print(f'Gradient Boost Test Set Accuracy{key}: {val.mean()}')
