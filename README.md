@@ -86,7 +86,7 @@ How are we able to fix the issue of overfitting the data in the future? First of
 
 
 ## How To Use
-Running `webscrape.py` will scrape the data and save it to the final csv's into the data folder. After that, you can run `asdhfgasfgasdkfh` which will load the cleaned dataset, instantiate models, train, predict, and give results.
+Running `Rotten-Tomatoes/data/datasets/pyfiles/rotten.py` will scrape the data and save it to the final csv's into the data folder. After that, you can run `InitialModels.py` and `LSTM.py` which will instantiate models, train, predict, and give results.
 
 ---
 
