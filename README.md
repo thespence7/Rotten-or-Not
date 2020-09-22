@@ -1,8 +1,20 @@
-# Rotten-or-Not
+![Project Image](https://github.com/thespence7/Rotten-or-Not/Rotten-Tomatoes/img/Title_Graphic/rt_logo_primary_rgb-h_2018.jpg)
+
+---
+
+### Table of Contents
+
+- [Description](#description)
+- [How To Use](#how-to-use)
+- [Author Info](#author-info)
+
+---
+
+# Description
 
 Early on in my childhood, I loved watching movies. I remember watching The Lion King on VHS (I know, I sound terribly old with that reference), so many times that I somehow burned the actual film strip in my copy. As I matured, I critiqued movies based on their content and how well they were made. Relating to my love of movies and being able to review them, I wanted to pursue a data science project involving a process where I predicted a critic's rating of a movie based on their review. In this project, I explore how to determine a critic's freshness or rottenness using Natural Language Processing techniques. 
 
-# About the data
+## About the data
 This dataset was scraped from Rottentomatoes.com and placed in rotten_tomatoes_reviews.csv with there being 240k Fresh and 240k Rottent reviews.
 
 <p align="center">
@@ -71,5 +83,22 @@ Interestingly, accuracy stays somewhat constant and loss is increasing, which su
 
 How are we able to fix the issue of overfitting the data in the future? First off, we need much more data. Maybe three to four million reviews, but that is just a start. Future comparisons of my model would include VaderSentiment and TextBlob. Thank you for going through my repo. 
 
+
+
+## How To Use
+Running `python clean_data.py` will load the dataset, clean, create dummies, and save the final csv's into the data folder. After that, you can run `python run_models.py` which will load the cleaned dataset, instantiate models, train, predict, and give results.
+
+---
+
+[Back To The Top](#Table-of-Contents)
+
+---
+
+## Author Info
+
+- email - [thespencerarnold@gmail.com](edward.kim9280@gmail.com)
+- LinkedIn - [Spencer Arnold](https://www.linkedin.com/in/spencearnold/)
+
+[Back To The Top](#Table-of-Contents)
 As always, if you have any questions or request changes, please reach out or comment.
 
