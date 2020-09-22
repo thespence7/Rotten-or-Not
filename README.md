@@ -1,4 +1,4 @@
-# `Rotten or Not?`
+# Rotten or Not?
 
 ---
 
