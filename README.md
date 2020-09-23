@@ -67,7 +67,7 @@ LSTM We can see dropout having the desired impact on training with a slightly sl
 **LSTM Train Set** | **LSTM Test Set** |
 ------------------ | ----------------- |
 Accuracy: 89.9% | Accuracy: 79.4% |
-Loss: 24.1% | Loss: 50.7%
+Loss: .241 | Loss: .507
 
 <p align="center">
   <img width="600" height="450" src="Rotten-Tomatoes/img/results/LSTM_Accuracy.png">
